@@ -31,15 +31,20 @@ export default function App() {
       <View style={styles.inputContainer}>
         <TextInput placeholder="Todo Title" style={styles.input} />
         <TextInput placeholder="Description" style={styles.input} />
-        <Button title="Add Todo" onPress={() => {}} color="#2196F3" />
+        <Button
+          title="Add Todo"
+          onPress={() => {}}
+          style={styles.button}
+          
+        />
       </View>
 
       <View style={styles.divider} />
 
       <View style={styles.buttonContainer}>
-        <Button title="All" onPress={() => {}} color="#2196F3" />
-        <Button title="Active" onPress={() => {}} color="#2196F3" />
-        <Button title="Done" onPress={() => {}} color="#2196F3" />
+        <Button title="All" onPress={() => {}} style={styles.button} />
+        <Button title="Active" onPress={() => {}} style={styles.button} />
+        <Button title="Done" onPress={() => {}} style={styles.button} />
       </View>
 
       <FlatList
@@ -57,6 +62,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     padding: 20,
     justifyContent: "flex-start",
+  },
+  button: {
+    backgroundColor: "#2196F3",
   },
   title: {
     fontSize: 24,
