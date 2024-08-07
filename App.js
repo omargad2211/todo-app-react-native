@@ -31,12 +31,7 @@ export default function App() {
       <View style={styles.inputContainer}>
         <TextInput placeholder="Todo Title" style={styles.input} />
         <TextInput placeholder="Description" style={styles.input} />
-        <Button
-          title="Add Todo"
-          onPress={() => {}}
-          style={styles.button}
-          
-        />
+        <Button title="Add Todo" onPress={() => {}} style={styles.button} />
       </View>
 
       <View style={styles.divider} />
@@ -62,6 +57,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     padding: 20,
     justifyContent: "flex-start",
+    margin: 5,
   },
   button: {
     backgroundColor: "#2196F3",
